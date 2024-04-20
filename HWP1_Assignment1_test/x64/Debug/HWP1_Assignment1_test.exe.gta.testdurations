@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Executable>C:\Users\jurin\Documents\Atmel Studio\7.0\HWP1_Assignment1\HWP1_Assignment1_test\x64\Debug\HWP1_Assignment1_test.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="LEDArrayTest.Leds_direction_set_to_output" Duration="1" />
+    <TestDuration Test="LEDArrayTest.Leds_off_after_init" Duration="1" />
+    <TestDuration Test="LEDArrayTest.led_direction_set_to_output" Duration="1" />
+    <TestDuration Test="LEDArrayTest.leds_off_after_init" Duration="1" />
+    <TestDuration Test="LEDArrayTest.wrong_led_number_returns_error" Duration="1" />
+    <TestDuration Test="LEDArrayTest.correct_led_number_returns_ok" Duration="1" />
+    <TestDuration Test="LEDArrayTest.wrong_state_returns_error" Duration="1" />
+    <TestDuration Test="LEDArrayTest.correct_state_returns_ok" Duration="1" />
+    <TestDuration Test="LEDArrayTest.over_limit_led_number_returns_error" Duration="1" />
+    <TestDuration Test="LEDArrayTest.under_limit_led_number_returns_error" Duration="1" />
+    <TestDuration Test="LEDArrayTest.correct_led_is_set" Duration="1" />
+    <TestDuration Test="LEDArrayTest.correct_led_is_cleared" Duration="1" />
+    <TestDuration Test="ButtonTest.led_direction_set_to_output" Duration="1" />
+    <TestDuration Test="ButtonTest.leds_off_after_init" Duration="1" />
+    <TestDuration Test="ButtonTest.button_pin_input_after_init" Duration="1" />
+    <TestDuration Test="ButtonTest.button_pins_input_after_init" Duration="1" />
+    <TestDuration Test="ButtonTest.button_pins_pullup_after_init" Duration="1" />
+    <TestDuration Test="ButtonTest.over_limit_button_returns_error" Duration="1" />
+    <TestDuration Test="ButtonTest.under_limit_button_returns_error" Duration="1" />
+    <TestDuration Test="ButtonTest.correct_unpressed_button_returns_off" Duration="1" />
+    <TestDuration Test="ButtonTest.correct_pressed_button_returns_on" Duration="1" />
+    <TestDuration Test="LEDArrayTest.correct_led_number_returns_success" Duration="1" />
+    <TestDuration Test="ButtonTest.correct_pressed_button_returns_on2" Duration="1" />
+    <TestDuration Test="ButtonTest.correct_unpressed_button_returns_off2" Duration="1" />
+    <TestDuration Test="LEDArrayTest.over_limit_lightbar_returns_error" Duration="1" />
+    <TestDuration Test="LEDArrayTest.under_limit_lightbar_returns_error" Duration="1" />
+    <TestDuration Test="LEDArrayTest.correct_lightbar_sets_correct_leds" Duration="1" />
+    <TestDuration Test="ButtonTest.scan_key_pressed_button_returns_index" Duration="1" />
+    <TestDuration Test="ButtonTest.init_keys_should_set_pins_input" Duration="1" />
+    <TestDuration Test="ButtonTest.init_keys_should_set_pins_pullup" Duration="1" />
+    <TestDuration Test="ButtonTest.get_key_with_over_limit_button_should_return_error" Duration="1" />
+    <TestDuration Test="ButtonTest.get_key_with_under_limit_button_should_return_error" Duration="1" />
+    <TestDuration Test="ButtonTest.get_key_in_register_C_with_all_buttons_unpressed_should_return_off" Duration="1" />
+    <TestDuration Test="ButtonTest.get_key_in_register_D_with_all_buttons_unpressed_should_return_off" Duration="1" />
+    <TestDuration Test="ButtonTest.get_key_in_register_C_with_pressed_button_should_return_on" Duration="1" />
+    <TestDuration Test="ButtonTest.get_key_in_register_D_with_pressed_button_should_return_on" Duration="1" />
+    <TestDuration Test="ButtonTest.scan_key_in_register_C_with_pressed_button_should_return_index" Duration="1" />
+    <TestDuration Test="ButtonTest.scan_key_in_register_D_with_pressed_button_should_return_index" Duration="1" />
+    <TestDuration Test="ButtonTest.scan_key_with_pressed_multiple_buttons_should_return_lowest" Duration="1" />
+    <TestDuration Test="ButtonTest.scan_key_with_with_no_button_pressed_should_return_zero" Duration="1" />
+  </TestDurations>
+</GtaTestDurations>

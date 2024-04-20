@@ -1,0 +1,4 @@
+C:\Users\jurin\Documents\Atmel Studio\7.0\HWP1_Assignment1\HWP1_Assignment1_test\x64\Debug\HWP1_Assignment1_test.vcxproj.CopyComplete
+C:\Users\jurin\Documents\Atmel Studio\7.0\HWP1_Assignment1\HWP1_Assignment1_test\x64\Debug\HWP1_Assignments_Tests.exe
+C:\Users\jurin\Documents\Atmel Studio\7.0\HWP1_Assignment1\HWP1_Assignment1_test\x64\Debug\gtest.pdb
+C:\Users\jurin\Documents\Atmel Studio\7.0\HWP1_Assignment1\HWP1_Assignment1_test\x64\Debug\gtest_main.pdb
