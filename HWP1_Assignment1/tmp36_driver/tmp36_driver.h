@@ -9,12 +9,16 @@
 #ifndef TMP36_DRIVER_H_
 #define TMP36_DRIVER_H_
 
-static int16_t temperature_celsius;
+#include <stdint.h>
 
-uint8_t tmp36_init(void);
-void tmp36_process(void);
-uint16_t tmp36_get_raw_temp(void);
-void tmp36_calculate_celsius(void);
+#define ENABLE_PIN PG0
+#define OUT_PIN PK7
+
+volatile extern uint8_t new_measurement_flag;
+
+void tmp36_init(void);
+void tmp36_process(float* temperature);
+float tmp36_calculate_celsius(uint16_t adc_value);
 
 
 

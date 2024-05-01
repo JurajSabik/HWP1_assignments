@@ -28,48 +28,48 @@ TEST_F(LEDArrayTest, led_direction_set_to_output) {
 TEST_F(LEDArrayTest, leds_off_after_init){
 	EXPECT_EQ(PORTA, 0xFF);
 }
-TEST_F(LEDArrayTest, over_limit_led_number_returns_error){
+TEST_F(LEDArrayTest, set_led_with_over_limit_led_should_return_error){
 	int8_t result = set_led(OVER_LIMIT_LED, ON);
 	EXPECT_EQ(result, ERROR);
 }
-TEST_F(LEDArrayTest, under_limit_led_number_returns_error) {
+TEST_F(LEDArrayTest, set_led_with_under_limit_led_should_return_error) {
 	int8_t result = set_led(UNDER_LIMIT_LED, ON);
 	EXPECT_EQ(result, ERROR);
 }
-TEST_F(LEDArrayTest, correct_led_number_returns_success) {
+TEST_F(LEDArrayTest, set_led_with_correct_led_should_return_success) {
 	int8_t result = set_led(CORRECT_LED, ON);
 	EXPECT_EQ(result, SUCCESS);
 }
-TEST_F(LEDArrayTest, wrong_state_returns_error) {
+TEST_F(LEDArrayTest, set_led_with_wrong_state_should_return_error) {
 	int8_t result = set_led(CORRECT_LED, WRONG_STATE);
 	EXPECT_EQ(result, ERROR);
 }
-TEST_F(LEDArrayTest, correct_state_returns_ok) {
+TEST_F(LEDArrayTest, set_led_with_correct_state_should_return_success) {
 	int8_t result = set_led(CORRECT_LED, ON);
 	EXPECT_EQ(result, SUCCESS);
 }
-TEST_F(LEDArrayTest, correct_led_is_set){
+TEST_F(LEDArrayTest, set_led_on_with_correct_led_should_set){
 	int8_t result = set_led(CORRECT_LED, ON);
 	EXPECT_EQ(PORTA, 0xFB);
 	EXPECT_EQ(result, SUCCESS);
 }
-TEST_F(LEDArrayTest, correct_led_is_cleared) {
+TEST_F(LEDArrayTest, set_led_off_with_correct_led_should_clear) {
 	int8_t result = set_led(CORRECT_LED, OFF);
 	EXPECT_EQ(PORTA, 0xFF);
 	EXPECT_EQ(result, SUCCESS);
 }
 
-TEST_F(LEDArrayTest, over_limit_lightbar_returns_error) {
+TEST_F(LEDArrayTest, lightbar_with_over_limit_led_should_return_error) {
 	int8_t result = lightbar(OVER_LIMIT_LED);
 	EXPECT_EQ(result, ERROR);
 }
 
-TEST_F(LEDArrayTest, under_limit_lightbar_returns_error) {
+TEST_F(LEDArrayTest, lightbar_with_under_limit_led_should_return_error) {
 	int8_t result = lightbar(UNDER_LIMIT_BAR);
 	EXPECT_EQ(result, ERROR);
 }
 
-TEST_F(LEDArrayTest, correct_lightbar_sets_correct_leds) {
+TEST_F(LEDArrayTest, lightbar_with_correct_leds_sets_leds) {
 	int8_t result = lightbar(CORRECT_LED);
 	EXPECT_EQ(PORTA, 0xF8);
 	EXPECT_EQ(result, SUCCESS);

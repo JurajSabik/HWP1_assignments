@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Executable>C:\Users\jurin\Documents\Atmel Studio\7.0\HWP1_Assignment1\HWP1_Assignment1_test\x64\Debug\HWP1_Assignments_Tests.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="ButtonTest.init_keys_should_set_pins_input" Duration="1" />
+    <TestDuration Test="ButtonTest.init_keys_should_set_pins_pullup" Duration="1" />
+    <TestDuration Test="ButtonTest.get_key_with_over_limit_button_should_return_error" Duration="1" />
+    <TestDuration Test="ButtonTest.get_key_with_under_limit_button_should_return_error" Duration="1" />
+    <TestDuration Test="ButtonTest.get_key_in_register_C_with_all_buttons_unpressed_should_return_off" Duration="1" />
+    <TestDuration Test="ButtonTest.get_key_in_register_D_with_all_buttons_unpressed_should_return_off" Duration="1" />
+    <TestDuration Test="ButtonTest.get_key_in_register_C_with_pressed_button_should_return_on" Duration="1" />
+    <TestDuration Test="ButtonTest.get_key_in_register_D_with_pressed_button_should_return_on" Duration="1" />
+    <TestDuration Test="ButtonTest.scan_key_in_register_C_with_pressed_button_should_return_index" Duration="1" />
+    <TestDuration Test="ButtonTest.scan_key_in_register_D_with_pressed_button_should_return_index" Duration="1" />
+    <TestDuration Test="ButtonTest.scan_key_with_pressed_multiple_buttons_should_return_lowest" Duration="1" />
+    <TestDuration Test="ButtonTest.scan_key_with_with_no_button_pressed_should_return_zero" Duration="1" />
+    <TestDuration Test="LEDArrayTest.led_direction_set_to_output" Duration="1" />
+    <TestDuration Test="LEDArrayTest.leds_off_after_init" Duration="1" />
+    <TestDuration Test="LEDArrayTest.set_led_with_over_limit_led_should_return_error" Duration="1" />
+    <TestDuration Test="LEDArrayTest.set_led_with_under_limit_led_should_return_error" Duration="1" />
+    <TestDuration Test="LEDArrayTest.set_led_with_correct_led_should_return_success" Duration="1" />
+    <TestDuration Test="LEDArrayTest.set_led_with_wrong_state_should_return_error" Duration="1" />
+    <TestDuration Test="LEDArrayTest.set_led_with_correct_state_should_return_success" Duration="1" />
+    <TestDuration Test="LEDArrayTest.set_led_on_with_correct_led_should_set" Duration="1" />
+    <TestDuration Test="LEDArrayTest.set_led_off_with_correct_led_should_clear" Duration="1" />
+    <TestDuration Test="LEDArrayTest.lightbar_with_over_limit_led_should_return_error" Duration="1" />
+    <TestDuration Test="LEDArrayTest.lightbar_with_under_limit_led_should_return_error" Duration="1" />
+    <TestDuration Test="LEDArrayTest.lightbar_with_correct_leds_sets_leds" Duration="1" />
+    <TestDuration Test="TMP36DriverTest.init_should_set_adc_and_output" Duration="1" />
+    <TestDuration Test="TMP36DriverTest.init_should_set_interrupt" Duration="1" />
+    <TestDuration Test="TMP36DriverTest.CalculateCelsiusReturnsCorrectTemperature" Duration="5" />
+    <TestDuration Test="TMP36DriverTest.calculate_celsius_should_return_correct_celsius" Duration="1" />
+    <TestDuration Test="TMP36DriverTest.TimerInterruptTriggersADCConversion" Duration="1" />
+    <TestDuration Test="TMP36DriverTest.timer_interrupt_should_trigger_conversion" Duration="1" />
+    <TestDuration Test="TMP36DriverTest.ADCInterruptUpdatesLastADCValue" Duration="1" />
+    <TestDuration Test="TMP36DriverTest.adc_interrupt_updates_last_adc_value" Duration="1" />
+    <TestDuration Test="TMP36DriverTest.process_should_update_passed_pointer_with_correct_value" Duration="1" />
+    <TestDuration Test="TMP36DriverTest.adc_interrupt_sets_flag" Duration="1" />
+  </TestDurations>
+</GtaTestDurations>

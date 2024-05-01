@@ -178,6 +178,15 @@
     <Compile Include="buttons\buttons.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="main.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="tmp36_driver\tmp36_driver.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="tmp36_driver\tmp36_driver.h">
+      <SubType>compile</SubType>
+    </Compile>
     <None Include="ledbar_main.c">
       <SubType>compile</SubType>
     </None>
@@ -187,13 +196,14 @@
     <Compile Include="leds\led_array.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="assignment1_main.c">
+    <None Include="assignment1_main.c">
       <SubType>compile</SubType>
-    </Compile>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="buttons" />
     <Folder Include="leds" />
+    <Folder Include="tmp36_driver" />
   </ItemGroup>
   <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
 </Project>
