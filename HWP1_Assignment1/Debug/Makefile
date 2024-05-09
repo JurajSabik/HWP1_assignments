@@ -35,14 +35,15 @@ LINKER_SCRIPT_DEP:=
 SUBDIRS :=  \
 ../buttons \
 ../leds \
+../display \
 ../tmp36_driver
 
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS +=  \
-../display.c \
 ../buttons/buttons.c \
-../main.c \
+../assignment3_main.c \
+../display/display.c \
 ../tmp36_driver/tmp36_driver.c \
 ../leds/led_array.c
 
@@ -54,30 +55,30 @@ ASM_SRCS +=
 
 
 OBJS +=  \
-display.o \
 buttons/buttons.o \
-main.o \
+assignment3_main.o \
+display/display.o \
 tmp36_driver/tmp36_driver.o \
 leds/led_array.o
 
 OBJS_AS_ARGS +=  \
-display.o \
 buttons/buttons.o \
-main.o \
+assignment3_main.o \
+display/display.o \
 tmp36_driver/tmp36_driver.o \
 leds/led_array.o
 
 C_DEPS +=  \
-display.d \
 buttons/buttons.d \
-main.d \
+assignment3_main.d \
+display/display.d \
 tmp36_driver/tmp36_driver.d \
 leds/led_array.d
 
 C_DEPS_AS_ARGS +=  \
-display.d \
 buttons/buttons.d \
-main.d \
+assignment3_main.d \
+display/display.d \
 tmp36_driver/tmp36_driver.d \
 leds/led_array.d
 
@@ -95,13 +96,6 @@ LINKER_SCRIPT_DEP+=
 
 
 # AVR32/GNU C Compiler
-./display.o: .././display.c
-	@echo Building file: $<
-	@echo Invoking: AVR8/GNU C Compiler : 5.4.0
-	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DF_CPU=16000000 -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include" -I"../display"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -g2 -Wall -mmcu=atmega2560 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega2560" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
-	@echo Finished building: $<
-	
-
 buttons/buttons.o: ../buttons/buttons.c
 	@echo Building file: $<
 	@echo Invoking: AVR8/GNU C Compiler : 5.4.0
@@ -109,7 +103,14 @@ buttons/buttons.o: ../buttons/buttons.c
 	@echo Finished building: $<
 	
 
-./main.o: .././main.c
+./assignment3_main.o: .././assignment3_main.c
+	@echo Building file: $<
+	@echo Invoking: AVR8/GNU C Compiler : 5.4.0
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DF_CPU=16000000 -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include" -I"../display"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -g2 -Wall -mmcu=atmega2560 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega2560" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	@echo Finished building: $<
+	
+
+display/display.o: ../display/display.c
 	@echo Building file: $<
 	@echo Invoking: AVR8/GNU C Compiler : 5.4.0
 	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DF_CPU=16000000 -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include" -I"../display"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -g2 -Wall -mmcu=atmega2560 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega2560" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 

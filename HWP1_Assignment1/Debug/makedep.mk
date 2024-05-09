@@ -2,11 +2,11 @@
 # Automatically-generated file. Do not edit or delete the file
 ################################################################################
 
-display.c
-
 buttons\buttons.c
 
-main.c
+assignment3_main.c
+
+display\display.c
 
 tmp36_driver\tmp36_driver.c
 
