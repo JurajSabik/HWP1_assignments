@@ -44,6 +44,7 @@ C_SRCS +=  \
 ../buttons/buttons.c \
 ../assignment3_main.c \
 ../display/display.c \
+../matrix_keyboard.c \
 ../tmp36_driver/tmp36_driver.c \
 ../leds/led_array.c
 
@@ -58,6 +59,7 @@ OBJS +=  \
 buttons/buttons.o \
 assignment3_main.o \
 display/display.o \
+matrix_keyboard.o \
 tmp36_driver/tmp36_driver.o \
 leds/led_array.o
 
@@ -65,6 +67,7 @@ OBJS_AS_ARGS +=  \
 buttons/buttons.o \
 assignment3_main.o \
 display/display.o \
+matrix_keyboard.o \
 tmp36_driver/tmp36_driver.o \
 leds/led_array.o
 
@@ -72,6 +75,7 @@ C_DEPS +=  \
 buttons/buttons.d \
 assignment3_main.d \
 display/display.d \
+matrix_keyboard.d \
 tmp36_driver/tmp36_driver.d \
 leds/led_array.d
 
@@ -79,6 +83,7 @@ C_DEPS_AS_ARGS +=  \
 buttons/buttons.d \
 assignment3_main.d \
 display/display.d \
+matrix_keyboard.d \
 tmp36_driver/tmp36_driver.d \
 leds/led_array.d
 
@@ -111,6 +116,13 @@ buttons/buttons.o: ../buttons/buttons.c
 	
 
 display/display.o: ../display/display.c
+	@echo Building file: $<
+	@echo Invoking: AVR8/GNU C Compiler : 5.4.0
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DF_CPU=16000000 -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include" -I"../display"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -g2 -Wall -mmcu=atmega2560 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega2560" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	@echo Finished building: $<
+	
+
+./matrix_keyboard.o: .././matrix_keyboard.c
 	@echo Building file: $<
 	@echo Invoking: AVR8/GNU C Compiler : 5.4.0
 	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DF_CPU=16000000 -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include" -I"../display"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -g2 -Wall -mmcu=atmega2560 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega2560" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 

@@ -86,6 +86,32 @@ Discarded input sections
  .text          0x00000000        0x0 display/display.o
  .data          0x00000000        0x0 display/display.o
  .bss           0x00000000        0x0 display/display.o
+ .text          0x00000000        0x0 matrix_keyboard.o
+ .data          0x00000000        0x0 matrix_keyboard.o
+ .bss           0x00000000        0x0 matrix_keyboard.o
+ .text.init_matrix_keyboard
+                0x00000000       0xb2 matrix_keyboard.o
+ .text.get_matrix_key
+                0x00000000       0xec matrix_keyboard.o
+ .rodata        0x00000000       0x11 matrix_keyboard.o
+ .text.get_key_label
+                0x00000000       0x52 matrix_keyboard.o
+ .text.get_user_input
+                0x00000000       0x8c matrix_keyboard.o
+ .data.col_pins
+                0x00000000       0x1c matrix_keyboard.o
+ .data.row_pins
+                0x00000000       0x1c matrix_keyboard.o
+ .debug_info    0x00000000      0x33f matrix_keyboard.o
+ .debug_abbrev  0x00000000      0x1dc matrix_keyboard.o
+ .debug_loc     0x00000000      0x291 matrix_keyboard.o
+ .debug_aranges
+                0x00000000       0x38 matrix_keyboard.o
+ .debug_ranges  0x00000000       0x28 matrix_keyboard.o
+ .debug_line    0x00000000      0x2a3 matrix_keyboard.o
+ .debug_str     0x00000000      0x2b7 matrix_keyboard.o
+ .comment       0x00000000       0x31 matrix_keyboard.o
+ .debug_frame   0x00000000       0x84 matrix_keyboard.o
  .text          0x00000000        0x0 tmp36_driver/tmp36_driver.o
  .data          0x00000000        0x0 tmp36_driver/tmp36_driver.o
  .bss           0x00000000        0x0 tmp36_driver/tmp36_driver.o
@@ -251,6 +277,7 @@ LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/
 LOAD buttons/buttons.o
 LOAD assignment3_main.o
 LOAD display/display.o
+LOAD matrix_keyboard.o
 LOAD tmp36_driver/tmp36_driver.o
 LOAD leds/led_array.o
 START GROUP

@@ -8,6 +8,8 @@ assignment3_main.c
 
 display\display.c
 
+matrix_keyboard.c
+
 tmp36_driver\tmp36_driver.c
 
 leds\led_array.c

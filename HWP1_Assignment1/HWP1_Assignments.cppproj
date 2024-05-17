@@ -173,6 +173,9 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="assignment4_main.c">
+      <SubType>compile</SubType>
+    </None>
     <Compile Include="buttons\buttons.c">
       <SubType>compile</SubType>
     </Compile>
@@ -189,6 +192,12 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="display\display.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="matrix_keyboard.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="matrix_keyboard.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="tmp36_driver\tmp36_driver.c">

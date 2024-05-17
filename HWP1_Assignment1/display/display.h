@@ -9,23 +9,6 @@
 #ifndef DISPLAY_H_
 #define DISPLAY_H_
 
-//   _a_
-// f|   |b
-//  |_g_|
-// e|   |c
-//  |_d_|.h
-
-//#define SEG_0 0x03	//0b00000011
-//#define SEG_1 0x9F	//0b10011111
-//#define SEG_2 0x2B	//0b00101011
-//#define SEG_3 0x0D	//0b00001101
-//#define SEG_4 0x93	//0b10010011
-//#define SEG_5 0x49	//0b01001001
-//#define SEG_6 0x41	//0b01000001
-//#define SEG_7 0x1F	//0b00011111
-//#define SEG_8 0x01	//0b00000001
-//#define SEG_9 0x09	//0b00001001
-
 #define SI_PORT PORTB
 #define SI_PIN  PB2		// data in
 #define SCK_PORT PORTB
