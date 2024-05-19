@@ -45,6 +45,10 @@ void init_matrix_keyboard(void) {
 	}
 }
 
+uint8_t get_matrix_key_label(){
+	return get_key_label(get_matrix_key());
+}
+
 int8_t get_matrix_key() {
 	for (uint8_t row = 0; row < 4; row++) {
 		// Activate row (set low)
@@ -78,7 +82,7 @@ uint8_t get_key_label(uint8_t key_index) {
 	return 255; //invalid input
 }
 
-uint16_t get_user_input(bool *cancelled, display_callback_t display_callback) {
+uint16_t get_user_input(bool *cancelled, uint16_t initial_value, display_callback_t display_callback) {
 	uint16_t input_value = 0;
 	uint8_t key_index;
 	uint8_t key_label;
@@ -97,7 +101,7 @@ uint16_t get_user_input(bool *cancelled, display_callback_t display_callback) {
 			} 
 			else if (key_label == 15) {  // If '*' (cancel)
 				*cancelled = true;  // Set the cancelled flag
-				return 9999;  
+				return initial_value;  
 			} 
 			else if (key_label <= 9 && key_label >= 0) {  // Check if it's a valid digit
 				input_value = input_value * 10 + key_label;  // Append it to the input value

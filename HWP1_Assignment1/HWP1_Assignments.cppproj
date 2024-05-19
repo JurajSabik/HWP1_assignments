@@ -173,9 +173,9 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="assignment4_main.c">
+    <Compile Include="assignment4_main.c">
       <SubType>compile</SubType>
-    </None>
+    </Compile>
     <Compile Include="buttons\buttons.c">
       <SubType>compile</SubType>
     </Compile>
@@ -185,19 +185,25 @@
     <None Include="assignment2_main.c">
       <SubType>compile</SubType>
     </None>
-    <Compile Include="assignment3_main.c">
+    <None Include="assignment3_main.c">
       <SubType>compile</SubType>
-    </Compile>
+    </None>
     <Compile Include="display\display.c">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="display\display.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="matrix_keyboard.c">
+    <Compile Include="matrix_keyboard\matrix_keyboard.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="matrix_keyboard.h">
+    <Compile Include="matrix_keyboard\matrix_keyboard.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="solar_controller\solar_controller.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="solar_controller\solar_controller.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="tmp36_driver\tmp36_driver.c">
@@ -223,6 +229,8 @@
     <Folder Include="buttons" />
     <Folder Include="leds" />
     <Folder Include="display" />
+    <Folder Include="matrix_keyboard" />
+    <Folder Include="solar_controller" />
     <Folder Include="tmp36_driver" />
   </ItemGroup>
   <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />

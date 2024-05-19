@@ -19,8 +19,9 @@ typedef void (*display_callback_t)(uint16_t value);
 
 void init_matrix_keyboard(void);
 int8_t get_matrix_key(void);
+uint8_t get_matrix_key_label(void);
 
 uint8_t get_key_label(uint8_t key_index);
-uint16_t get_user_input(bool *cancelled, display_callback_t display_callback);
+uint16_t get_user_input(bool *cancelled, uint16_t initial_value, display_callback_t display_callback);
 
 #endif /* MATRIX_KEYBOARD_H_ */

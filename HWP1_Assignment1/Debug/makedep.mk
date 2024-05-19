@@ -2,13 +2,15 @@
 # Automatically-generated file. Do not edit or delete the file
 ################################################################################
 
-buttons\buttons.c
+assignment4_main.c
 
-assignment3_main.c
+buttons\buttons.c
 
 display\display.c
 
-matrix_keyboard.c
+matrix_keyboard\matrix_keyboard.c
+
+solar_controller\solar_controller.c
 
 tmp36_driver\tmp36_driver.c
 

@@ -18,8 +18,12 @@ assignment4_main.d assignment4_main.o: .././assignment4_main.c \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\interrupt.h \
- ../././display/display.h .././matrix_keyboard.h \
- c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdbool.h
+ ../././display/display.h ../././matrix_keyboard/matrix_keyboard.h \
+ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdbool.h \
+ .././buttons/buttons.h .././leds/led_array.h \
+ .././tmp36_driver/tmp36_driver.h \
+ .././solar_controller/solar_controller.h \
+ .././solar_controller/../leds/led_array.h
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\io.h:
 
@@ -61,6 +65,16 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 
 ../././display/display.h:
 
-.././matrix_keyboard.h:
+../././matrix_keyboard/matrix_keyboard.h:
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdbool.h:
+
+.././buttons/buttons.h:
+
+.././leds/led_array.h:
+
+.././tmp36_driver/tmp36_driver.h:
+
+.././solar_controller/solar_controller.h:
+
+.././solar_controller/../leds/led_array.h:

@@ -1,5 +1,6 @@
-matrix_keyboard.d matrix_keyboard.o: .././matrix_keyboard.c \
- .././matrix_keyboard.h \
+matrix_keyboard/matrix_keyboard.d matrix_keyboard/matrix_keyboard.o: \
+ ../matrix_keyboard/matrix_keyboard.c \
+ ../matrix_keyboard/matrix_keyboard.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\io.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\sfr_defs.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\inttypes.h \
@@ -17,7 +18,7 @@ matrix_keyboard.d matrix_keyboard.o: .././matrix_keyboard.c \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h
 
-.././matrix_keyboard.h:
+../matrix_keyboard/matrix_keyboard.h:
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\io.h:
 
